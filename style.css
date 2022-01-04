@@ -118,7 +118,7 @@ img {
   color: white;
   padding: 1.8rem;
   border-radius: 9px;
-  font-weight: 500;
+  font-weight: 700;
   border: none;
 }
 
@@ -145,7 +145,7 @@ img {
 @media (min-width: 20em) {
   .container {
     margin: 0 auto;
-    width: 35rem;
+    width: 45rem;
   }
 }
 
