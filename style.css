@@ -1,0 +1,157 @@
+/* - Weights: 500, 700, 900 */
+
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+/* ### Primary
+
+- Pale blue: hsl(225, 100%, 94%)
+- Bright blue: hsl(245, 75%, 52%)
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Desaturated blue: hsl(223, 47%, 23%) */
+
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: hsl(245, 75%, 52%);
+
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+  --white: hsl(0, 0%, 100%);
+  --para-color: hsl(224, 23%, 55%, 70%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 64.5%;
+}
+body {
+  font-family: "Red Hat Display", sans-serif;
+  background-image: url("./images/pattern-background-desktop.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: hsl(225, 100%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+img {
+  max-width: 100%;
+}
+
+.banner-img {
+  overflow: hidden;
+  border-top-left-radius: 13px;
+  border-top-right-radius: 13px;
+}
+
+.plan__title {
+  font-weight: 700;
+  font-size: 1.6rem;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+.card {
+  border-radius: 13px;
+  box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+  border-radius: 13px;
+  background-color: white;
+}
+
+.title {
+  font-weight: 900;
+  font-size: 2.2rem;
+}
+
+.desc {
+  font-size: 1.4rem;
+  color: hsl(224, 23%, 55%, 70%);
+  letter-spacing: 1;
+}
+
+.plan {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  background-color: hsl(225, 100%, 94%, 20%);
+}
+
+.plan__price {
+  color: hsl(224, 23%, 55%, 70%);
+  font-size: 1.6rem;
+}
+
+.text-box--container {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+}
+
+.hyper-link {
+  color: hsl(245, 75%, 52%);
+  text-decoration: underline;
+  font-size: 1.2rem;
+}
+
+.btn {
+  background-color: hsl(245, 75%, 52%);
+  color: white;
+  padding: 1.8rem;
+  border-radius: 9px;
+  font-weight: 500;
+  border: none;
+}
+
+.cancel-text {
+  font-size: 1.4rem;
+  color: hsl(224, 23%, 55%, 70%);
+}
+
+.btn:hover {
+  background-color: hsl(228, 45%, 44%);
+  cursor: pointer;
+}
+
+.hyper-link:hover {
+  text-decoration: none;
+  color: hsl(228, 45%, 44%);
+  cursor: pointer;
+}
+
+.cancel-text:hover {
+  cursor: pointer;
+}
+
+@media (min-width: 20em) {
+  .container {
+    margin: 0 auto;
+    width: 35rem;
+  }
+}
+
+/* @media (min-width: em) {
+  .container {
+    margin: 0 auto;
+    width: 35rem;
+  }
+} */
